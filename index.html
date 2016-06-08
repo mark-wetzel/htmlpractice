@@ -14,12 +14,19 @@
 
             <div id="toc">
                 <h2>Table of Contents</h2>
+                <h3>HTML</h3>
                 <ul>
                     <li><a href="#paragraphs">Paragraphs</a></li>
                     <li><a href="#links">Links</a></li>
                     <li><a href="#images">Images</a></li>
                     <li><a href="#tables">Tables</a></li>
                     <li><a href="#forms">Forms</a></li>
+                </ul>
+                <h3>CSS</h3>
+
+                <h3>JavaScript</h3>
+                <ul>
+                    <li><a href="#utilizing-css">Utilizing CSS</a></li>
                 </ul>
             </div>
                
@@ -115,7 +122,27 @@
             </table>
 
             <h2 id="forms">Forms</h2>
-            Tag: &lt;form&gt;
+            <p>Tag: &lt;form&gt; ... &lt;/form&gt;</p>
+            <p>Attributes: <code>method</code>, <code>action</code></p>
         </div>
+
+        <h2>CSS</h2>
+        <h3 id="utilizing-css">Utilizing CSS</h3>
+        <ul>
+            <li><a href="#inline-styles">Inline Styles</li>
+            <li><a href="#internal-styles">Internal Styles</a></li>           
+            <li><a href="#external-styles">External Styles</a></li>
+        </ul>
+
+        <h4 id="inline-styles">Inline Styles</h4>
+        
+        <p>Inline styles are placed directly in html tags, like this:</p>
+        <code>&lt;div <em>style="background-color:green;"</em>&gt; ... &lt;div&gt;</code>
+        <p>Inline styles are the most specific way to override styling and will override both internal and external styles for that particular element.</p>
+        <p>They're generally a bad idea as HTML is about semantic meaning, not presentation. It's also very difficult to update the same style over multiple pages when required.</p>
+
+        <h4 id="internal-styles">Internal Styles</h4>
+
+        <h4 id="external-styles">External Styles</h4>
     </body>
 </html>
