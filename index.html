@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <title>Html5</title>
+        <!---->
+        <!--<link rel="stylesheet" href="reset.css">-->
         <style>
             body { 
                 background-color:#ccc;
@@ -9,17 +11,95 @@
 
             div.content {
                 background-color:#fff;
-                /*padding:5px;*/
+                padding:5px;
                 border-radius:4px;
+            }
+
+            div#toc { 
+                background-color:gray;
+            }
+
+            div#toc ul { 
+                margin:0;
+            }
+
+            div#toc ul li { 
+                list-style:none;              
+            }
+
+            div#toc ul li a { 
+                color:#000;
+                text-decoration:none;
             }
         </style>
     </head>
+    
     <body>
         <h1>Html5</h1>
-        <div class="content">   
+        <div class="content">
+
+            <div id="toc">
+                <h2>Table of Contents</h2>
+                <ul>
+                    <li><a href="#paragraphs">Paragraphs</a></li>
+                    <li><a href="#links">Links</a></li>
+
+                </ul>
+            </div>
+               
             <h2>Hello, world.</h2>
+            <h2 id="paragraphs">Paragraphs</h2>
             <p data-intro>This is a paragraph inside of a div.</p>
-            <p>Another paragraph.</p>
+            <!--Inline style-->
+            <p style="font-style:italic;">Another paragraph with an inline style applied.</p>
+
+            <h2>&lt;strong&gt; and &lt;em&gt;</h2>
+            <p>A few <strong>strong</strong> ways to show <em>emphasis</em> using semantic meaning. Though browsers style these for you it's welcome to change the styling to anything.</p> 
+            <p>The above tags were displayed with HTML entities</p>
+
+            <h2>Outdated tags</h2>
+            <p>If I actually wanted HTML to style for me I'd use &lt;b&gt; and &lt;i&gt; but that's bad practice, mmk?</p>
+
+            <h2>Line Breaks - &lt;br&gt; (void tag--HTML5) &lt;br /&gt; (self-closing tag--XHTML)</h2>
+            <br>
+            <p>Break it down.</p>
+            <br>
+
+            <h1>Headings</h1>
+            &lt;h1&gt; -  &lt;h6&gt;
+            <ul>
+                <li>h1 should be the main heading and used once</li>
+                <li>h2 - h6 should be used as often as necessary but in order</li>
+                <li><em>h3 should be a subheading of h2 should be a subheading of h1</em></li>
+            </ul>
+
+            <h2>Lists</h2>
+            <p>There are both ordered and unordered lists.</p>
+            <h3>Ordered List - &lt;ol&gt;</h3>
+            <ol>
+                <li>Inside an ordered list</li>
+                <li>Numbered for us automatically</li>
+                <li>Mind the semantic meaning of <em>ordered</em></li>
+            </ol>
+            <h3>Unordered List - &lt;ul&gt;</h3>
+            <ul>
+                <li>As it sounds: unordered</li>
+                <li>Frequently used in navigation</li>
+
+                <ol>    
+                    <li>Ordered list inside an unordered list!</li>
+                </ol>
+            </ul>
+
+            <h2 id="links">Links</h2>
+            <ul>
+                <li>Utilizes the anchor tag: &lt;a&gt;</li>
+                <li>The actual link is the value of the <code>href</code> attribute</li>
+                <li>Absolute path (http://www.google.com) or relative to the current page</li>
+                <ul>
+                    <li>e.g. &lta href="some_page_in_dir.html"&gt;Click here&lt;/a&gt;</li>
+                </ul>
+            </ul>
         </div>
     </body>
 </html>
