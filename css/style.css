@@ -1,0 +1,26 @@
+body { 
+    background-color:#ccc;
+}
+
+div.content {
+    background-color:#fff;
+    padding:5px;
+    border-radius:4px;
+}
+
+div#toc { 
+    background-color:gray;
+}
+
+div#toc ul { 
+    margin:0;
+}
+
+div#toc ul li { 
+    list-style:none;              
+}
+
+div#toc ul li a { 
+    color:#000;
+    text-decoration:none;
+}
