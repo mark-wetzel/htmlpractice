@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <title>Html5</title>
-        <!---->
         <!--<link rel="stylesheet" href="reset.css">-->
         <style>
             
@@ -18,7 +17,9 @@
                 <ul>
                     <li><a href="#paragraphs">Paragraphs</a></li>
                     <li><a href="#links">Links</a></li>
-
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#forms">Forms</a></li>
                 </ul>
             </div>
                
@@ -76,6 +77,45 @@
                 </ul>
                 <li>You can also link to elements with unique IDs on the page using the hashtag character (#). (View source for ToC)</li>
             </ul>
+
+            <h2 id="images">Images</h2>
+            <img src="img/kf.jpg" width="650" height="366">
+            <ul>
+                <li>Width and height tags used to tell the browser how large the image will be before it's fully loaded (avoid possible page jumping)</li>
+                <li>Alt attribute for accessibility purposes. Useful information embedded for visually impaired users (utilizing screenreaders)</li>
+                <li>Three common formats: JPEG, GIF and PNG</li>
+                <ul>
+                    <li>JPEG (jay-peg): Mathematical compression. Some image quality lost. Used most commonly for photographs.</li>
+                    <li>GIF (peanut-butter): Images with solid colors such as logos and icons. 256 colors. Full transparency for any pixels.</li>
+                    <li>PNG (ping): Similiar to GIF but 16 million color support. Alpha (partial) transparency. Unsupported in some older browsers.</li>
+                </ul>
+            </ul>
+
+            <h2 id="tables">Tables</h2>
+            <ul>
+                <li>Structure tabular data. Not for designing the layout of a page!</li>
+                <li>&lt;table&gt; defines the table</li>
+                <li>&lt;tr&gt; defines a table row and is enclosed in the &lt;table&gt; tag</li>
+                <li>&lt;td&gt; defines a table data cell and is enclosed in the &lt;tr&gt; tag</li>
+            </ul>
+
+            <h3>Example</h3>
+
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>Occuptation</td>
+                    <td>Speciality</td>
+                </tr>
+                <tr>
+                    <td>Mark Wetzel</td>
+                    <td>Web Developer</td>
+                    <td>Server-side</td>
+                </tr>
+            </table>
+
+            <h2 id="forms">Forms</h2>
+            Tag: &lt;form&gt;
         </div>
     </body>
 </html>
